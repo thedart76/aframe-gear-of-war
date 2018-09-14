@@ -29,7 +29,7 @@ AFRAME.registerComponent('checkpoint', {
 		var hovering = false;
 		
 		el.addEventListener('mouseenter', function () {
-			// Prevent shooting bullets at checkpoints on triggerdown
+			// Preventing controller from shooting bullets at checkpoints on triggerdown
 			pointer.emit('hovering');
 			hovering = true;
 			el.setAttribute('material', 'opacity', data.opacityEnter);
