@@ -1,5 +1,5 @@
 # aframe-gear-of-war
-Cover-based combat game for Gear VR (WebVR entry for js13KGames 2018 competition)
+Cover-based combat game for Gear VR (WebVR entry for js13KGames 2018 competition).
 
 ![](https://raw.githubusercontent.com/thedart76/aframe-gear-of-war/master/gear-of-war-github.gif)
 
