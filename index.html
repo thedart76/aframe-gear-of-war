@@ -57,7 +57,7 @@
 			<a-mixin id="enemy-target-boss" target="healthPoints: 30"
 					 geometry="primitive: cylinder; radius: 2; height: 4"
 					 hit-handler="colorAlive: #990000; colorDead: #FF0000;
-							  colorAddScalar: 0.03"
+								  colorAddScalar: 0.03"
 					 class="restart-game">
 			</a-mixin>
 			<a-mixin id="enemy-gun-boss"
@@ -99,7 +99,7 @@
 				  geometry="primitive: plane; height: 1.5; width: 2.4"
 				  material="color: #212121; shader: flat"
 				  text="width: 1.6; wrapCount: 50; lineHeight: 60;
-					value: \n\n A cover-based combat game designed and coded specifically for Gear VR using Samsung Internet VR. \n\n - Press the trigger to shoot \n - Fire at the checkpoints to teleport \n - Press and hold the trackpad to get cover \n\n SHOOT ALL THE ENEMIES AND TAKE THE SYSTEM OFFLINE! \n\n\n\n">
+						value: \n\n A cover-based combat game designed and coded specifically for Gear VR using Samsung Internet VR. \n\n - Press the trigger to shoot \n - Fire at the checkpoints to teleport \n - Press and hold the trackpad to get cover \n\n SHOOT ALL THE ENEMIES AND TAKE THE SYSTEM OFFLINE! \n\n\n\n">
 			<!-- TITLE -->
 			<a-entity position="0 0.5 0.001"
 					  text="width: 2.4; align: center; value: GEAR OF WAR">
@@ -110,12 +110,12 @@
 					  material="color: #FF0000; opacity: 0.5; shader: flat"
 					  text="width: 1.6; align: center; value: START"
 					  checkpoint="cameraRigTo: -1 0 0;
-							  getCover_from_X: -1; getCover_to_X: -1;
-							  getCover_from_Y: 0; getCover_to_Y: -0.6;
-							  triggerEnemies: .stage-a;
-							  removeEntity: #start-info;
-							  makeInvisible: #a-00;
-							  nextCP_1: #a-01">
+								  getCover_from_X: -1; getCover_to_X: -1;
+								  getCover_from_Y: 0; getCover_to_Y: -0.6;
+								  triggerEnemies: .stage-a;
+								  removeEntity: #start-info;
+								  makeInvisible: #a-00;
+								  nextCP_1: #a-01">
 			</a-entity>
 		</a-entity>
 		
@@ -199,10 +199,10 @@
 		<!-- CHECKPOINT 00 -->
 		<a-entity id="a-00" mixin="checkpoint" position="-1 1.6 0" class="clickable"
 				  checkpoint="cameraRigTo: -1 0 0;
-						  getCover_from_X: -1; getCover_to_X: -1;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 0; getCover_to_Z: 0;
-						  nextCP_1: #a-01">
+							  getCover_from_X: -1; getCover_to_X: -1;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 0; getCover_to_Z: 0;
+							  nextCP_1: #a-01">
 		</a-entity>
 		
 		<!-- COVER 01 -->
@@ -210,10 +210,10 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="a-01" mixin="checkpoint" position="3 1.6 -4" class="clickable"
 				  checkpoint="cameraRigTo: 3 0 -4;
-						  getCover_from_X: 3; getCover_to_X: 2.4;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: -4; getCover_to_Z: -4;
-						  prevCP_1: #a-00; nextCP_1: #b-01">
+							  getCover_from_X: 3; getCover_to_X: 2.4;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: -4; getCover_to_Z: -4;
+							  prevCP_1: #a-00; nextCP_1: #b-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -246,11 +246,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="b-01" mixin="checkpoint" position="0 1.6 -19" class="clickable"
 				  checkpoint="cameraRigTo: 0 0 -19;
-						  getCover_from_X: 0; getCover_to_X: 0;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -19; getCover_to_Z: -19;
-						  triggerEnemies: .stage-b;
-						  prevCP_1: #a-01; nextCP_1: #b-02">
+							  getCover_from_X: 0; getCover_to_X: 0;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -19; getCover_to_Z: -19;
+							  triggerEnemies: .stage-b;
+							  prevCP_1: #a-01; nextCP_1: #b-02">
 		</a-entity>
 		
 		<!-- COVER 02 -->
@@ -258,10 +258,10 @@
 		<!-- CHECKPOINT 02 -->
 		<a-entity id="b-02" mixin="checkpoint" position="7 1.6 -16" class="clickable"
 				  checkpoint="cameraRigTo: 7 0 -16;
-						  getCover_from_X: 7; getCover_to_X: 7;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: -16; getCover_to_Z: -16.6;
-						  prevCP_1: #b-01; nextCP_1: #c-01">
+							  getCover_from_X: 7; getCover_to_X: 7;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: -16; getCover_to_Z: -16.6;
+							  prevCP_1: #b-01; nextCP_1: #c-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -294,11 +294,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="c-01" mixin="checkpoint" position="11 1.6 -8" class="clickable"
 				  checkpoint="cameraRigTo: 11 0 -8;
-						  getCover_from_X: 11; getCover_to_X: 11;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -8; getCover_to_Z: -8;
-						  triggerEnemies: .stage-c;
-						  prevCP_1: #b-02; nextCP_1: #d-01">
+							  getCover_from_X: 11; getCover_to_X: 11;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -8; getCover_to_Z: -8;
+							  triggerEnemies: .stage-c;
+							  prevCP_1: #b-02; nextCP_1: #d-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -318,11 +318,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="d-01" mixin="checkpoint" position="20 1.6 -1" class="clickable"
 				  checkpoint="cameraRigTo: 20 0 -1;
-						  getCover_from_X: 20; getCover_to_X: 20;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -1; getCover_to_Z: -1;
-						  triggerEnemies: .stage-d;
-						  prevCP_1: #c-01; nextCP_1: #d-02">
+							  getCover_from_X: 20; getCover_to_X: 20;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -1; getCover_to_Z: -1;
+							  triggerEnemies: .stage-d;
+							  prevCP_1: #c-01; nextCP_1: #d-02">
 		</a-entity>
 		
 		<!-- COVER 02 -->
@@ -330,10 +330,10 @@
 		<!-- CHECKPOINT 02 -->
 		<a-entity id="d-02" mixin="checkpoint" position="13 1.6 5" class="clickable"
 				  checkpoint="cameraRigTo: 13 0 5;
-						  getCover_from_X: 13; getCover_to_X: 13.6;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 5; getCover_to_Z: 5;
-						  prevCP_1: #d-01; nextCP_1: #e-01">
+							  getCover_from_X: 13; getCover_to_X: 13.6;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 5; getCover_to_Z: 5;
+							  prevCP_1: #d-01; nextCP_1: #e-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -366,11 +366,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="e-01" mixin="checkpoint" position="11 1.6 20.5" class="clickable"
 				  checkpoint="cameraRigTo: 11 0 20.5;
-						  getCover_from_X: 11; getCover_to_X: 11;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 20.5; getCover_to_Z: 20.5;
-						  triggerEnemies: .stage-e;
-						  prevCP_1: #d-02; nextCP_1: #f-01">
+							  getCover_from_X: 11; getCover_to_X: 11;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 20.5; getCover_to_Z: 20.5;
+							  triggerEnemies: .stage-e;
+							  prevCP_1: #d-02; nextCP_1: #f-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -400,11 +400,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="f-01" mixin="checkpoint" position="2.5 1.6 16" class="clickable"
 				  checkpoint="cameraRigTo: 2.5 0 16;
-						  getCover_from_X: 2.5; getCover_to_X: 2.5;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 16; getCover_to_Z: 16;
-						  triggerEnemies: .stage-f;
-						  prevCP_1: #e-01; nextCP_1: #g-00a">
+							  getCover_from_X: 2.5; getCover_to_X: 2.5;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 16; getCover_to_Z: 16;
+							  triggerEnemies: .stage-f;
+							  prevCP_1: #e-01; nextCP_1: #g-00a">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -422,28 +422,28 @@
 		<!-- CHECKPOINT 00a -->
 		<a-entity id="g-00a" mixin="checkpoint" position="-5 1.6 7.5" class="clickable"
 				  checkpoint="cameraRigTo: -5 0 7.5;
-						  getCover_from_X: -5; getCover_to_X: -5;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 7.5; getCover_to_Z: 7.5;
-						  prevCP_1: #f-01; nextCP_1: #g-00b">
+							  getCover_from_X: -5; getCover_to_X: -5;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 7.5; getCover_to_Z: 7.5;
+							  prevCP_1: #f-01; nextCP_1: #g-00b">
 		</a-entity>
 		
 		<!-- CHECKPOINT 00b -->
 		<a-entity id="g-00b" mixin="checkpoint" position="-11 1.6 7.5" class="clickable"
 				  checkpoint="cameraRigTo: -11 0 7.5;
-						  getCover_from_X: -11; getCover_to_X: -11;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 7.5; getCover_to_Z: 7.5;
-						  prevCP_1: #g-00a; nextCP_1: #g-00c">
+							  getCover_from_X: -11; getCover_to_X: -11;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 7.5; getCover_to_Z: 7.5;
+							  prevCP_1: #g-00a; nextCP_1: #g-00c">
 		</a-entity>
 		
 		<!-- CHECKPOINT 00c -->
 		<a-entity id="g-00c" mixin="checkpoint" position="-11 1.6 12.5" class="clickable"
 				  checkpoint="cameraRigTo: -11 0 12.5;
-						  getCover_from_X: -11; getCover_to_X: -11;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 12.5; getCover_to_Z: 12.5;
-						  prevCP_1: #g-00b; nextCP_1: #g-01">
+							  getCover_from_X: -11; getCover_to_X: -11;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 12.5; getCover_to_Z: 12.5;
+							  prevCP_1: #g-00b; nextCP_1: #g-01">
 		</a-entity>
 		
 		<!-- COVER 01 -->
@@ -451,11 +451,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="g-01" mixin="checkpoint" position="-7 1.6 14" class="clickable"
 				  checkpoint="cameraRigTo: -7 0 14;
-						  getCover_from_X: -7; getCover_to_X: -7;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 14; getCover_to_Z: 14;
-						  triggerEnemies: .stage-g;
-						  prevCP_1: #g-00c; nextCP_1: #g-02">
+							  getCover_from_X: -7; getCover_to_X: -7;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 14; getCover_to_Z: 14;
+							  triggerEnemies: .stage-g;
+							  prevCP_1: #g-00c; nextCP_1: #g-02">
 		</a-entity>
 		
 		<!-- COVER 02 -->
@@ -463,10 +463,10 @@
 		<!-- CHECKPOINT 02 -->
 		<a-entity id="g-02" mixin="checkpoint" position="-11 1.6 17" class="clickable"
 				  checkpoint="cameraRigTo: -11 0 17;
-						  getCover_from_X: -11; getCover_to_X: -10.4;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 17; getCover_to_Z: 17;
-						  prevCP_1: #g-01; nextCP_1: #h-00">
+							  getCover_from_X: -11; getCover_to_X: -10.4;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 17; getCover_to_Z: 17;
+							  prevCP_1: #g-01; nextCP_1: #h-00">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -497,10 +497,10 @@
 		<!-- CHECKPOINT 00 -->
 		<a-entity id="h-00" mixin="checkpoint" position="-13 1.6 22" class="clickable"
 				  checkpoint="cameraRigTo: -13 0 22;
-						  getCover_from_X: -13; getCover_to_X: -13;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 22; getCover_to_Z: 22;
-						  prevCP_1: #g-02; nextCP_1: #h-01">
+							  getCover_from_X: -13; getCover_to_X: -13;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 22; getCover_to_Z: 22;
+							  prevCP_1: #g-02; nextCP_1: #h-01">
 		</a-entity>
 		
 		<!-- COVER 01 -->
@@ -508,11 +508,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="h-01" mixin="checkpoint" position="-19 1.6 21" class="clickable"
 				  checkpoint="cameraRigTo: -19 0 21;
-						  getCover_from_X: -19; getCover_to_X: -19;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 21; getCover_to_Z: 21;
-						  triggerEnemies: .stage-h;
-						  prevCP_1: #h-00; nextCP_1: #h-02; nextCP_2: #h-03">
+							  getCover_from_X: -19; getCover_to_X: -19;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 21; getCover_to_Z: 21;
+							  triggerEnemies: .stage-h;
+							  prevCP_1: #h-00; nextCP_1: #h-02; nextCP_2: #h-03">
 		</a-entity>
 		
 		<!-- COVER 02 -->
@@ -520,10 +520,10 @@
 		<!-- CHECKPOINT 02 -->
 		<a-entity id="h-02" mixin="checkpoint" position="-17 1.6 16" class="clickable"
 				  checkpoint="cameraRigTo: -17 0 16;
-						  getCover_from_X: -17; getCover_to_X: -17;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 16; getCover_to_Z: 16;
-						  prevCP_1: #h-01; nextCP_1: #h-03">
+							  getCover_from_X: -17; getCover_to_X: -17;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 16; getCover_to_Z: 16;
+							  prevCP_1: #h-01; nextCP_1: #h-03">
 		</a-entity>
 		
 		<!-- COVER 03 -->
@@ -531,10 +531,10 @@
 		<!-- CHECKPOINT 03 -->
 		<a-entity id="h-03" mixin="checkpoint" position="-22 1.6 11" class="clickable"
 				  checkpoint="cameraRigTo: -22 0 11;
-						  getCover_from_X: -22; getCover_to_X: -22.6;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 11; getCover_to_Z: 11;
-						  prevCP_1: #h-02; prevCP_2: #h-01; nextCP_1: #i-00">
+							  getCover_from_X: -22; getCover_to_X: -22.6;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 11; getCover_to_Z: 11;
+							  prevCP_1: #h-02; prevCP_2: #h-01; nextCP_1: #i-00">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -575,10 +575,10 @@
 		<!-- CHECKPOINT 00 -->
 		<a-entity id="i-00" mixin="checkpoint" position="-15 1.6 0" class="clickable"
 				  checkpoint="cameraRigTo: -12.5 0 0;
-						  getCover_from_X: -12.5; getCover_to_X: -12.5;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: 0; getCover_to_Z: 0;
-						  prevCP_1: #h-03; nextCP_1: #i-01">
+							  getCover_from_X: -12.5; getCover_to_X: -12.5;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: 0; getCover_to_Z: 0;
+							  prevCP_1: #h-03; nextCP_1: #i-01">
 		</a-entity>
 		
 		<!-- COVER 01 -->
@@ -586,11 +586,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="i-01" mixin="checkpoint" position="-7.5 1.6 0" class="clickable"
 				  checkpoint="cameraRigTo: -7.5 0 0;
-						  getCover_from_X: -7.5; getCover_to_X: -7.5;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: 0; getCover_to_Z: 0;
-						  triggerEnemies: .stage-i;
-						  prevCP_1: #i-00; nextCP_1: #j-01">
+							  getCover_from_X: -7.5; getCover_to_X: -7.5;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: 0; getCover_to_Z: 0;
+							  triggerEnemies: .stage-i;
+							  prevCP_1: #i-00; nextCP_1: #j-01">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET -->
@@ -610,11 +610,11 @@
 		<!-- CHECKPOINT 01 -->
 		<a-entity id="j-01" mixin="checkpoint" position="-8 1.6 -21" class="clickable"
 				  checkpoint="cameraRigTo: -8 0 -21;
-						  getCover_from_X: -8; getCover_to_X: -8;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -21; getCover_to_Z: -21;
-						  triggerEnemies: .stage-j;
-						  prevCP_1: #i-01; nextCP_1: #j-02; nextCP_2: #j-03">
+							  getCover_from_X: -8; getCover_to_X: -8;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -21; getCover_to_Z: -21;
+							  triggerEnemies: .stage-j;
+							  prevCP_1: #i-01; nextCP_1: #j-02; nextCP_2: #j-03">
 		</a-entity>
 		
 		<!-- COVER 02 LEFT -->
@@ -624,10 +624,10 @@
 		<!-- CHECKPOINT 02 -->
 		<a-entity id="j-02" mixin="checkpoint" position="-11 1.6 -17" class="clickable"
 				  checkpoint="cameraRigTo: -11 0 -17;
-						  getCover_from_X: -11; getCover_to_X: -11;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -17; getCover_to_Z: -16.4;
-						  prevCP_1: #j-01; nextCP_1: #j-03">
+							  getCover_from_X: -11; getCover_to_X: -11;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -17; getCover_to_Z: -16.4;
+							  prevCP_1: #j-01; nextCP_1: #j-03">
 		</a-entity>
 		
 		<!-- COVER 03 -->
@@ -635,10 +635,10 @@
 		<!-- CHECKPOINT 03 -->
 		<a-entity id="j-03" mixin="checkpoint" position="-14 1.6 -23" class="clickable"
 				  checkpoint="cameraRigTo: -14 0 -23;
-						  getCover_from_X: -14; getCover_to_X: -14;
-						  getCover_from_Y: 0; getCover_to_Y: -0.6;
-						  getCover_from_Z: -23; getCover_to_Z: -23;
-						  prevCP_1: #j-02; prevCP_2: #j-01; nextCP_1: #k-00">
+							  getCover_from_X: -14; getCover_to_X: -14;
+							  getCover_from_Y: 0; getCover_to_Y: -0.6;
+							  getCover_from_Z: -23; getCover_to_Z: -23;
+							  prevCP_1: #j-02; prevCP_2: #j-01; nextCP_1: #k-00">
 		</a-entity>
 		
 		<!-- ENEMY 01 TARGET BOSS -->
@@ -679,10 +679,10 @@
 		<!-- CHECKPOINT 00 -->
 		<a-entity id="k-00" mixin="checkpoint" position="-19 1.6 -10" class="clickable"
 				  checkpoint="cameraRigTo: -19 0 -10;
-						  getCover_from_X: -19; getCover_to_X: -19;
-						  getCover_from_Y: 0; getCover_to_Y: 0;
-						  getCover_from_Z: -10; getCover_to_Z: -10;
-						  prevCP_1: #j-03; nextCP_1: #offline">
+							  getCover_from_X: -19; getCover_to_X: -19;
+							  getCover_from_Y: 0; getCover_to_Y: 0;
+							  getCover_from_Z: -10; getCover_to_Z: -10;
+							  prevCP_1: #j-03; nextCP_1: #offline">
 		</a-entity>
 		
 		<!-- SERVERS -->
@@ -709,10 +709,10 @@
 					  geometry="primitive: plane; height: 1.5; width: 2.4"
 					  material="color: #212121; shader: flat" position="0 0 0.1"
 					  text="width: 3; align: center; color: #33FF00;
-						value: SYSTEM ONLINE \n\n\n\n\n\n\n\n;">
+							value: SYSTEM ONLINE \n\n\n\n\n\n\n\n;">
 				<a-entity id="screen-message"
 						  text="width: 2; wrapCount: 50; lineHeight: 60; color: #00FF00;
-							value: \n\n\n\n\n\n 0101111101111110000101000111101010101000000110010100001100111010111110010010111100110111000101100110110001001100001000110010111000111110110010111111010010111101010111110111111000010100011110101010100000011001010000110011101011111001001011110011011100010110011011000100110000100011001011100011111011001011111101001011110101011111011111100001010001111010101010000001100101000011001110101111100100101111\n\n\n\n">
+								value: \n\n\n\n\n\n 0101111101111110000101000111101010101000000110010100001100111010111110010010111100110111000101100110110001001100001000110010111000111110110010111111010010111101010111110111111000010100011110101010100000011001010000110011101011111001001011110011011100010110011011000100110000100011001011100011111011001011111101001011110101011111011111100001010001111010101010000001100101000011001110101111100100101111\n\n\n\n">
 				</a-entity>
 			</a-entity>
 		</a-entity>
@@ -722,13 +722,13 @@
 			<a-entity id="offline" mixin="power-off"
 					  position="0 -0.06 0" rotation="90 0 0" class="clickable"
 					  checkpoint="cameraRigTo: -12.76 0 -10;
-							  getCover_from_X: -12.76; getCover_to_X: -12.76;
-							  getCover_from_Y: 0; getCover_to_Y: 0;
-							  getCover_from_Z: -10; getCover_to_Z: -10;
-							  powerOff: true;
-							  prevCP_1: #k-00; nextCP_1: #offline"
+								  getCover_from_X: -12.76; getCover_to_X: -12.76;
+								  getCover_from_Y: 0; getCover_to_Y: 0;
+								  getCover_from_Z: -10; getCover_to_Z: -10;
+								  powerOff: true;
+								  prevCP_1: #k-00; nextCP_1: #offline"
 					  end-game="title: SYSTEM OFFLINE \n\n\n\n\n\n\n\n;
-							message: \n\n\n Congratulations, you made it! Thank you for playing my game :-) \n Special thanks and credits to: \n - @feiss (aframe-super-shooter-kit) \n - @andgokevin (look-at component) \n - @dmarcos ...and all the A-Frame Community! \n\n GEAR OF WAR is a WebVR experience designed and coded by Danilo Pasquariello @theDart76.">
+								message: \n\n\n Congratulations, you made it! Thank you for playing my game :-) \n Special thanks and credits to: \n - @feiss (aframe-super-shooter-kit) \n - @andgokevin (look-at component) \n - @dmarcos ...and all the A-Frame Community! \n\n GEAR OF WAR is a WebVR experience designed and coded by Danilo Pasquariello @theDart76.">
 			</a-entity>
 		</a-cylinder>
 		
