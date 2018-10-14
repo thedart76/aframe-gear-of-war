@@ -10,8 +10,3 @@ Cover-based combat game for Gear VR (WebVR entry for js13KGames 2018 competition
 ------------
 
 📄 **NOTE**: The GIF is from the Desktop version that I will release when the competition ends as js13Games rules read: *"...sending the same game as independent submissions targeting different platforms (for example separate builds for desktop and mobile) is forbidden."*
-
-------------
-⚠️ **14/09/2018 UPDATE**: Just spot 2 ID attributes at line 200 of the index file! 😲
-
-I will fix the code when the competition ends. 😅😉
