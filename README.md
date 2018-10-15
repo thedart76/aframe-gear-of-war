@@ -27,10 +27,10 @@ Cover-based combat game designed and coded specifically for Gear VR ([js13KGames
 
 ------------
 
-❓Why didn't I create just one version?
+❓*Why didn't I create just one version?*
 Long story short: I was lucky enough to manage to submit my game 10 minutes before the deadline!
 
-❓Why did you choose to sumbit the version for Gear VR instead of the Desktop version? More people would have tried it.
+❓*Why did you choose to sumbit the version for Gear VR instead of the Desktop version? More people would have tried it!*
 "Gear of War" is a tribute to the mechanincs of "Gears of War", and its name makes so much sense as a game for Gear VR. What can I do, I like plays of words!
 
 ------------
